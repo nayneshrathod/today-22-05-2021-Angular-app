@@ -43,7 +43,24 @@ git commit -m "first commit"<br>
 git branch -M main<br>
 git remote add origin https://github.com/nayneshrathod/today-22-05-2021-Angular-app.git<br>
 git push -u origin main<br>
-ngh --dir=deploy --branch=main<br>
+git checkout -b deploy-site <br>
+npx ngh --dir=deploy --branch=deploy-site <br>
 </code>
 
 <router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+ng build --prod --baseHref="https://nayneshrathod.github.io/today-22-05-2021-Angular-app/"
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nayneshrathod/today-22-05-2021-Angular-app.git
+git push -u origin main
+git checkout -b deploy-site 
+npx ngh --dir=deploy --branch=deploy-site
